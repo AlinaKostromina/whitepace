@@ -1338,7 +1338,7 @@ a {
         height: 24px;
     }
     .burger-btn {
-        padding: 16px;
+        padding: 10px;
     }
     .hero {
         background-image: url(../img/adaptive\ mob/hero-bg.svg);
@@ -1537,12 +1537,50 @@ a {
         height: 36px;
     }
     .footer .container {
-        
+        text-align: center;
+    }
+    .nav-logo {
+        align-items: center;
     }
     .footer-logo {
         width: 191px;
         height: 34px;
     }
+    .nav-text {
+        width: 93%;
+    }
+    .nav-point-active {
+        font-size: 18px;
+    }
+    .nav-point {
+        font-size: 18px;
+    }
+    .nav-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 99%;        
+    }
+    .info-text {
+        font-size: 18px;
+    }
+    .nav-down {
+        align-items: center;
+    }
+    .down-left {
+        margin-right: 0;
+    }
+    .left-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        gap: 20px;
+    }
+    .modif-footer-line { 
+        width: 95%;
+    }
+    
     
     
 
