@@ -213,6 +213,10 @@ a {
     border-radius: 6px;
 }
 
+.modif-text {
+    display: none;
+}
+
 .customise {
     margin-bottom: 280px;
 }
@@ -291,12 +295,6 @@ a {
     padding: 40px 44px;
 }
 
-.personal:hover {
-    /*СПРОСИТЬ*/
-    transform: scale(1.1);
-    background-color: var(--bgColor1);
-}
-
 .prices-title {
     font-weight: 600;
     font-size: 24px;
@@ -335,7 +333,7 @@ a {
 
 .everywhere {
     background-color: var(--bgColor1);
-    padding: 140px 0;
+    padding: 140px 0; 
     background-image: url(../img/everywhere-bg.svg);
     background-repeat: no-repeat;
     background-position: 0px -160px;
@@ -470,6 +468,29 @@ a {
 .clients .container {
     gap: 32px;
     margin-bottom: 60px;
+}
+
+.slider {
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: relative;
+    gap: 32px;
+    padding: 100px 0;
+}
+
+.slide {
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    gap: 32px;
+    position: relative;
+    transition: all 1s ease;  
+}
+
+.dote {
+    cursor: pointer;
 }
 
 .feedback {
@@ -653,6 +674,20 @@ a {
     display: flex;
     justify-content: center;
     gap: 12px;
+}
+
+.dote {
+    width: 12px;
+    height: 12px;
+    background-color: var(--bgColor2);
+    border-radius: 50%;
+}
+
+.dote-active {
+    width: 12px;
+    height: 12px;
+    background-color: var(--bgColor1);
+    border-radius: 50%;
 }
 
 .try {
@@ -928,119 +963,94 @@ a {
         font-weight: 500;
         font-size: 28px;
     }
-
     .container {
         max-width: 99%;
     }
-
     .hero-img {
         width: 53%;
     }
-
     .management {
         background-size: 245px 273px;
         background-position: -75px 62px;
     }
-
     .management-img {
         width: 53%;
     }
-
     .management .text {
         width: 73%;
     }
-
     .together .text {
         max-width: 545px;
     }
-
     .extension-img {
         width: 43%;
     }
-
     .extension .text {
         max-width: 548px;
-    }   
-    
+    }      
     .customise-img {
         width: 47%;
         height: 45%; 
-    }
-    
+    }  
     .customise-data .title {
         background-position: 0 128px;
         font-size: 64px;
-    }
-    
+    }  
     .customise .text {
         max-width: 516px;
     }
-
     .everywhere {
         background-image: none;  
     }
-
     .everywhere-data {
         display: flex;
         flex-direction: column;
         align-items: flex-start; 
     }
-
     .everywhere .container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;  
     }
-
     .everywhere-data .text {
         max-width: 660px;
         text-align: center;
     }
-
     .everywhere-data .title {
         font-size: 64px;
         max-width: 670px;
         background-position: 370px 125px;
     }
-
     .data-data .text {
         max-width: 546px;
     }
-
     .data-img {
         max-width: 50%;
     }
-
     .sponsors .title {
         font-size: 64px;
         background-position: 496px 55px;
         padding-bottom: 20px;
     }
-
     .apps-img {
         width: 528px;
         height: 427px;
     }
-
     .apps .title {
         font-size: 64px;
         max-width: 654px;
     }
-
     .apps .text {
         max-width: 460px;
     }
-
     .clients .title {
         background-position: 680px 37px;
         padding-bottom: 20px;
     }
-
     .nav-up {
         width: 100%;
         gap: 75.75px;
     }
-
     .nav-up nav:nth-child(4) {
         margin-right: 0;
     }
@@ -1563,6 +1573,7 @@ a {
     }
     .info-text {
         font-size: 18px;
+        max-width: 63%;
     }
     .nav-down {
         align-items: center;
